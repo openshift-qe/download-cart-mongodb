@@ -1,4 +1,4 @@
-Name: v2mongodb
+Name: mongodb
 Namespace: MONGODB
 Cartridge-Short-Name: MONGODB
 Architecture: noarch
@@ -39,7 +39,6 @@ Provides:
   - "mongodb"
   - "mongodb(version) = 2.2.0"
   - mongodb-basic-mode
-  - v2mongodb-2.2
 Publishes:
   publish-nosql-db-connection-info:
     Type: "ENV:NET_TCP:nosqldb:connection-info"
@@ -51,3 +50,4 @@ Endpoints:
     Private-Port-Name: DB_PORT
     Private-Port:      27017
     Public-Port-Name:  DB_PROXY_PORT
+Source-Url: git://github.com/jhou1/v2mongodb
