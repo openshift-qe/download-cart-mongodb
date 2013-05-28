@@ -1,4 +1,4 @@
-Name: jhoumongo
+Name: v2mongodb
 Namespace: MONGODB
 Cartridge-Short-Name: MONGODB
 Architecture: noarch
@@ -7,7 +7,7 @@ Description: "MongoDB is a scalable, high-performance, open source NoSQL databas
 Version: '2.2'
 Versions: [2.2]
 Cartridge-Version: 0.2.0
-Cartridge-Vendor: jhoumongo
+Cartridge-Vendor: v2mongodb
 License: ASL 2.0
 Vendor: 10gen
 Categories:
@@ -39,6 +39,7 @@ Provides:
   - "mongodb"
   - "mongodb(version) = 2.2.0"
   - mongodb-basic-mode
+  - v2mongodb-2.2
 Publishes:
   publish-nosql-db-connection-info:
     Type: "ENV:NET_TCP:nosqldb:connection-info"
@@ -50,5 +51,3 @@ Endpoints:
     Private-Port-Name: DB_PORT
     Private-Port:      27017
     Public-Port-Name:  DB_PROXY_PORT
-Install-Build-Required: false
-Source-Url: https://github.com/jhou1/v2mongodb.git
