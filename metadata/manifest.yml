@@ -50,4 +50,4 @@ Endpoints:
     Private-Port-Name: DB_PORT
     Private-Port:      27017
     Public-Port-Name:  DB_PROXY_PORT
-Source-Url: git://github.com/jhou1/v2mongodb
+Source-Url: https://github.com/jhou1/dcart-mongodb.git
